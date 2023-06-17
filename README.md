@@ -3,7 +3,7 @@
 ![](/Bundesliga.png)
 
 **CONTEXT:**
-According Wikipedia, Bundesliga sometimes referred to as the Fußball-Bundesliga, is a professional association football league in Germany. At the top of the German football league system, the Bundesliga is Germany's primary football competition. The Bundesliga comprises 18 teams and operates on a system of promotion and relegation with the 2. Bundesliga. Seasons run from August to May. Games are played on Fridays, Saturdays and Sundays.
+According Wikipedia, Bundesliga sometimes referred to as the Fußball-Bundesliga, is a professional association football league in Germany. At the top of the German football league system, the Bundesliga is Germany's primary football competition. The Bundesliga comprises 18 teams and operates on a system of promotion and relegating the 2 least-performed teams at the end of each season. Bundesliga. Seasons run from August to May. Games are played on Fridays, Saturdays and Sundays.
 
 **AIM:**
 The aim of this project is to clean and explore the data from the 'Bundeslisga_stats table' which spans from the records obtained from the 2005/2006 season to the 2022/2023 season in order to gain meaningful insights that are data-driven.
