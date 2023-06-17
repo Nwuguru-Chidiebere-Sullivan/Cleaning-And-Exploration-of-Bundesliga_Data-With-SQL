@@ -138,8 +138,8 @@ SELECT
   goals_home
 FROM bundesliga_stats
 WHERE goals_home > (SELECT 
-					  AVG(goals_home + goals_away) 
-				    FROM bundesliga_stats)
+			   AVG(goals_home + goals_away) 
+			   FROM bundesliga_stats)
       AND season = 2022;
 
 --How many goals were scored in each match in 2005 and how did that compare to the 
@@ -164,8 +164,7 @@ SELECT
   home_team_name,
   away_team_name,
   number_of_viewers,
-  ROUND(AVG(number_of_viewers) OVER(PARTITION BY 
-							 EXTRACT(MONTH FROM match_date)),2) AS months_avg
+  ROUND(AVG(number_of_viewers) OVER(PARTITION BY EXTRACT(MONTH FROM match_date)),2) AS months_avg
 FROM bundesliga_stats
 WHERE season = 2017
 ORDER BY match_date ASC, number_of_viewers DESC;
@@ -188,7 +187,7 @@ SELECT
   season,
   goals_home,
   SUM(goals_home) OVER(ORDER BY match_date
-					  ROWS BETWEEN 1 PRECEDING AND CURRENT ROW) AS sum_of_last_2_games
+		       ROWS BETWEEN 1 PRECEDING AND CURRENT ROW) AS sum_of_last_2_games
 FROM bundesliga_stats
 WHERE season = 2022
   AND home_team_id = 40;
